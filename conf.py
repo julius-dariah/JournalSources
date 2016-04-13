@@ -172,12 +172,14 @@ POSTS = (
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.ipynb", "posts", "post.tmpl"),
     ("posts/*.md", "posts", "post.tmpl"),
+    ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
     ("stories/*.rst", "stories", "story.tmpl"),
     ("stories/*.txt", "stories", "story.tmpl"),
     ("stories/*.ipynb", "stories", "story.tmpl"),
     ("stories/*.md", "stories", "story.tmpl"),
+    ("stories/*.html", "stories", "story.tmpl"),
 )
 
 
@@ -782,7 +784,9 @@ LICENSE = ""
 CONTENT_FOOTER = """Contents &copy; {date} 
         <a href="mailto:{email}">{author}</a> - Powered by 
         <a href="https://getnikola.com" rel="nofollow">Nikola</a>
-         {license}"""
+         {license}
+         - <a href="http://julius-dariah.github.io/stories/impressum/index.html">Terms & Privacy (German)</a>
+        """
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
